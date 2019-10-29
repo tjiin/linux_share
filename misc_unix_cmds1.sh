@@ -49,8 +49,11 @@ $ cd /etc/NetworkManager/system-connections && ls
 $ sudo cat NETWORK_NAME | grep psk=
 
 $ ssh -XC tj@192.168.1.74 x2x -east -to :0
-
+ 
 $ sudo nano /etc/environment/
-$ . /etc/environment
+$ . /etc/environment/
+S source /etc/environment/
+
+$ subl filename.txt
 
 
