@@ -56,4 +56,12 @@ S source /etc/environment/
 
 $ subl filename.txt
 
+$ git commit -am "message"
 
+$ ifconfig | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
+
+$ route
+	- shows keneral IP routing table and the device in use
+	- $ route | tail -n 1 | awk '{print $8}'
+
+$ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | head -n 1
