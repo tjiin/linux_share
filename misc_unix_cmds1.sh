@@ -82,13 +82,14 @@ $ sudo lshw
 
 $ echo 123 | xclip -sel clip
 
--------------
+------
+
 (from tower as local to laptop)
 $ scp /home/tj/Downloads/Blinded\ by\ the\ Light.2019.HDRip.XviD.AC3-EVO/Blinded.avi tj@192.168.1.64:~/Downloads/movie.avi
 	- no quotes in filenames or escaped spaces
--------------
 
--------------
+------
+
 opening files on display through ssh
 (ssh into tower)
 $ echo $DISPLAY
@@ -98,9 +99,27 @@ $ firefox reddit.com
 $ xdg-open creepy.txt
 $ eject
 
--------------
+------
 
-git fetch origin
-git diff master origin/master
+$ git fetch origin
+$ git diff master origin/master
+$ git diff master origin/master > next.patch
+$ git apply --ignore-space-change --ignore-whitespace next.patch
+	- will likely fail
+$ git apply --3way next.patch
 
--------------
+------
+
+- CTRL + Q
+	- Quit (easier than alt+f4)
+	- BUT in PyCharm this opens the documentation for symbol at caret!
+
+- CTRL + ALT + ARROW
+	- move workspace
+
+- SUPER + A
+	- activities view
+
+------
+(PyCharm)
+- CTLR + D at end of line duplicates it below
