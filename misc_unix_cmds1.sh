@@ -70,3 +70,5 @@ $ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-
 $ sudo lshw 
 --> niec wat of looking at hardware, similar to meminfo
 
+
+$ echo 123 | xclip -sel clip
