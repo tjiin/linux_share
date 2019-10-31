@@ -66,9 +66,18 @@ $ route
 
 $ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | head -n 1
 
-
 $ sudo lshw 
---> niec wat of looking at hardware, similar to meminfo
-
+--> nice way of looking at hardware, similar to meminfo
 
 $ echo 123 | xclip -sel clip
+
+-----
+opening files on display through ssh
+(ssh into tower)
+$ echo $DISPLAY
+	- if not 0 then
+$ export DISPLAY=:0
+$ firefox reddit.com 
+$ xdg-open creepy.txt
+$ eject
+----
