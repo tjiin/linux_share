@@ -81,3 +81,5 @@ $ firefox reddit.com
 $ xdg-open creepy.txt
 $ eject
 ----
+
+$ awk NR==3
