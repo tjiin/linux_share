@@ -15,7 +15,6 @@ sudo visudo
 
 install(){ sudo apt get install "$1"; }
 
-
 $ nmap -sP 192.168.1.0/24
 
 top -p1770 -p1309
@@ -58,12 +57,30 @@ $ subl filename.txt
 
 $ git commit -am "message"
 
-$ ifconfig | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 
+$ ifconfig | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 $ route
 	- shows keneral IP routing table and the device in use
 	- $ route | tail -n 1 | awk '{print $8}'
-
 $ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | head -n 1
+--> $ip addr show (lol)
 
 $ echo 123 | xclip -sel clip
+
+$ ip addr show | grep -P "(?<=inet\s)(192[\d.]+)\/([\d]+)" | awk '{print $2}'
+
+-------------
+$ git checkout -b new_branch_name
+$ git commit -am "starting new branch"
+$ git push -u origin branch1
+-------------
+
+resize window = ALT+F8
+--> change to CTRL+`
+	- use shift to snap
+
+-------------
+(from tower as local to laptop)
+$ scp /home/tj/Downloads/Blinded\ by\ the\ Light.2019.HDRip.XviD.AC3-EVO/Blinded.avi tj@192.168.1.64:~/Downloads/movie.avi
+	- no quotes in filenames or escaped spaces
+-------------
