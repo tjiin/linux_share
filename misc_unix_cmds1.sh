@@ -65,3 +65,8 @@ $ route
 	- $ route | tail -n 1 | awk '{print $8}'
 
 $ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | head -n 1
+
+
+$ sudo lshw 
+--> niec wat of looking at hardware, similar to meminfo
+
