@@ -15,6 +15,7 @@ sudo visudo
 
 install(){ sudo apt get install "$1"; }
 
+
 $ nmap -sP 192.168.1.0/24
 
 top -p1770 -p1309
@@ -74,15 +75,12 @@ $ echo 123 | xclip -sel clip
 
 $ ip addr show | grep -P "(?<=inet\s)(192[\d.]+)\/([\d]+)" | awk '{print $2}'
 
--------------
-$ git checkout -b new_branch_name
-$ git commit -am "starting new branch"
-$ git push -u origin branch1
--------------
+$ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | head -n 1
 
-resize window = ALT+F8
---> change to CTRL+`
-	- use shift to snap
+$ sudo lshw 
+--> nice way of looking at hardware, similar to meminfo
+
+$ echo 123 | xclip -sel clip
 
 -------------
 (from tower as local to laptop)
@@ -99,7 +97,10 @@ $ export DISPLAY=:0
 $ firefox reddit.com 
 $ xdg-open creepy.txt
 $ eject
+
 -------------
 
 git fetch origin
 git diff master origin/master
+
+-------------
