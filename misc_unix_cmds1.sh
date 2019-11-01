@@ -98,6 +98,11 @@ $ export DISPLAY=:0
 $ firefox reddit.com 
 $ xdg-open creepy.txt
 $ eject
+<<<<<<< HEAD
+----
+
+$ awk NR==3
+=======
 
 ------
 
@@ -123,3 +128,4 @@ $ git apply --3way next.patch
 ------
 (PyCharm)
 - CTLR + D at end of line duplicates it below
+>>>>>>> ce3e02f174df96835cf1fb63ca617ef30c4ceb26
