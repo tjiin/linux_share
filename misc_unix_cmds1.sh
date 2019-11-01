@@ -66,12 +66,30 @@ $ route
 
 $ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | head -n 1
 
+--> $ip addr show (lol)
+
 $ sudo lshw 
 --> nice way of looking at hardware, similar to meminfo
 
 $ echo 123 | xclip -sel clip
 
------
+$ ip addr show | grep -P "(?<=inet\s)(192[\d.]+)\/([\d]+)" | awk '{print $2}'
+
+$ dev=`route | tail -n 1 | awk '{print $8}'` && ifconfig $dev | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | head -n 1
+
+$ sudo lshw 
+--> nice way of looking at hardware, similar to meminfo
+
+$ echo 123 | xclip -sel clip
+
+------
+
+(from tower as local to laptop)
+$ scp /home/tj/Downloads/Blinded\ by\ the\ Light.2019.HDRip.XviD.AC3-EVO/Blinded.avi tj@192.168.1.64:~/Downloads/movie.avi
+	- no quotes in filenames or escaped spaces
+
+------
+
 opening files on display through ssh
 (ssh into tower)
 $ echo $DISPLAY
@@ -80,6 +98,34 @@ $ export DISPLAY=:0
 $ firefox reddit.com 
 $ xdg-open creepy.txt
 $ eject
+<<<<<<< HEAD
 ----
 
 $ awk NR==3
+=======
+
+------
+
+$ git fetch origin
+$ git diff master origin/master
+$ git diff master origin/master > next.patch
+$ git apply --ignore-space-change --ignore-whitespace next.patch
+	- will likely fail
+$ git apply --3way next.patch
+
+------
+
+- CTRL + Q
+	- Quit (easier than alt+f4)
+	- BUT in PyCharm this opens the documentation for symbol at caret!
+
+- CTRL + ALT + ARROW
+	- move workspace
+
+- SUPER + A
+	- activities view
+
+------
+(PyCharm)
+- CTLR + D at end of line duplicates it below
+>>>>>>> ce3e02f174df96835cf1fb63ca617ef30c4ceb26
