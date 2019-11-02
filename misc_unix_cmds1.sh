@@ -131,3 +131,15 @@ $ xinput list
 
 $ xinput disable device_id
 	- doesnt survice restart
+
+
+- sorting top (after command is run)
+	- M (memory)
+	- P (cpu)
+	- N (PID)
+	- T (time)
+
+
+$ pidof sublime_text
+
+$ ls -l /proc/<PID>/exe
