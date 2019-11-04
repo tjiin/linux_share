@@ -28,7 +28,7 @@ $ pstree -sp $$
 $ pstree -hp
 	- highlight current process and show all PIDs
 
-$ ps -e
+$ s p-e
 	- show all processes
 
 $ ps -ejH
@@ -143,3 +143,11 @@ $ xinput disable device_id
 $ pidof sublime_text
 
 $ ls -l /proc/<PID>/exe
+
+$ tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
+
+
+$ sudo dmidecode
+	- management device ITE IT8665E
+$ sensors
+$ psensor
